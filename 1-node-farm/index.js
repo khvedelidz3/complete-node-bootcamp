@@ -1,6 +1,7 @@
 const fs = require('fs');
 const http = require('http');
 const url = require('url');
+const replaceTemplate = require('./starter/modules/replaceTemplate');
 //
 // const textIn = fs.readFileSync('./starter/txt/input.txt', 'utf-8');
 //
@@ -19,24 +20,41 @@ const url = require('url');
 //         });
 //     });
 // });
-
 const data = fs.readFileSync(`${__dirname}/starter/dev-data/data.json`, 'utf-8');
+const dataObj = JSON.parse(data);
+const tempOverview = fs.readFileSync(`${__dirname}/starter/templates/template-overview.html`, 'utf-8');
+const tempProduct = fs.readFileSync(`${__dirname}/starter/templates/template-product.html`, 'utf-8');
+const tempCard = fs.readFileSync(`${__dirname}/starter/templates/template-card.html`, 'utf-8');
 
 const server = http.createServer((req, res) => {
-    const pathName = req.url;
+    const {query, pathname} = url.parse(req.url, true);
 
-    switch (pathName) {
+    switch (pathname) {
+        //overview page
         case '/':
         case '/overview':
-            res.end('This is overview');
+            res.writeHead(200, {'Content-type': 'text/html'});
+            const cardsHtml = dataObj.map(el => replaceTemplate(tempCard, el)).join('');
+            const overviewHtml = tempOverview.replace('{%PRODUCT_CARDS%}', cardsHtml);
+            res.end(overviewHtml);
             break;
+
+        //product page
         case '/product':
-            res.end('This is product');
+            res.writeHead(200, {'Content-type': 'text/html'});
+            const product = dataObj[+query.id];
+            const productHtml = replaceTemplate(tempProduct, product);
+
+            res.end(productHtml);
             break;
+
+        //api
         case '/api':
             res.writeHead(200, {'Content-type': 'application/json'});
             res.end(data);
             break;
+
+        //not found
         default :
             res.writeHead(404, {'Content-type': 'text/html'});
             res.end('<h1>404 Not Found</h1>');
