@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea423137-a22b-47ec-a478-257f2371e0a3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/complete-node-bootcamp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1-node-farm/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1-node-farm/starter/templates/template-card.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-node-farm/final/txt/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/1-node-farm/final/txt/output.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-node-farm/starter/templates/overview.html" beforeDir="false" afterPath="$PROJECT_DIR$/1-node-farm/starter/templates/template-overview.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-node-farm/starter/templates/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/1-node-farm/starter/templates/template-product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-node-farm/starter/txt/final.txt" beforeDir="false" afterPath="$PROJECT_DIR$/1-node-farm/starter/txt/final.txt" afterDir="false" />
-    </list>
+    <list default="true" id="ea423137-a22b-47ec-a478-257f2371e0a3" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -185,12 +170,12 @@
       <updated>1581256599582</updated>
       <workItem from="1581256600784" duration="2016000" />
       <workItem from="1581258681623" duration="9216000" />
-      <workItem from="1581347501163" duration="311000" />
+      <workItem from="1581347501163" duration="568000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11543000" />
+    <option name="totallyTimeSpent" value="11800000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="22" width="1376" height="754" extended-state="6" />
